@@ -21,6 +21,12 @@ in
         ExecStart = "${lib.getExe cfg.package} daemon";
         Restart = "on-failure";
         RestartSec = "15s";
+        PrivateTmp = true;
+        ProtectSystem = true;
+        ProtectHome = true;
+        BindPaths = [
+          config.environment.etc.hosts.source
+        ];
       };
     };
   };
