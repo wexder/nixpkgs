@@ -1,13 +1,13 @@
 { lib, fetchFromGitHub }:
 rec {
-  version = "3.12.0";
+  version = "custom";
   pyproject = true;
 
   src = fetchFromGitHub {
-    owner = "openrazer";
+    owner = "ssandrooo";
     repo = "openrazer";
-    tag = "v${version}";
-    hash = "sha256-Sgn+7DABsTnRTx/lh/++JPmfsQ7dM6frkyzG0F5k2gA=";
+    rev = "2026d48e60f21f381f0be9d41eca363430bfd7b6";
+    hash = "sha256-FCJ6InCtnZtPCO2aB9uOh6rdLtzO5xjK259BVWNLT5g=";
   };
 
   meta = {
