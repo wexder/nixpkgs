@@ -6,8 +6,8 @@ rec {
   src = fetchFromGitHub {
     owner = "ssandrooo";
     repo = "openrazer";
-    rev = "68ae4ded553b11891b0771706ec2be614fb19e67";
-    hash = "sha256-mOSMhkDpyQA+rz5kWGnfREtOPfnSNzWFHuIudjBix8U=";
+    rev = "d967b347cac759f7ebb192e0f7b19a762fb810db";
+    hash = "sha256-yivbMveYtJ3yVYG9yy8KzcCs7enJuuFMmGQ3tdcpAR0=";
   };
 
   meta = {
